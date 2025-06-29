@@ -23,7 +23,7 @@ const HomePage = () => {
     {
       name: "Mayra L.",
       location: "Buenos Aires, 41 años",
-      text: "Lo que me dieron en este taller vale 5 veces más. Pero lo mejor fue recuperar la confianza. Aprendí a venderme, a hablar en cámara y a activar mi proyecto.",
+      text: "Lo que me dieron en este programa vale 5 veces más. Pero lo mejor fue recuperar la confianza. Aprendí a venderme, a hablar en cámara y a activar mi proyecto.",
       rating: 5,
       image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop"
     }
@@ -80,7 +80,7 @@ const HomePage = () => {
               
               <div className="glass-effect rounded-2xl p-6 border border-primary-500/30">
                 <p className="text-lg font-medium mb-4">
-                  🔥 <strong>Esto no es otro curso.</strong> Es el sistema que te enseña a crear, automatizar y escalar tu negocio digital sin depender de nadie.
+                  🔥 <strong>Esto no es otro programa.</strong> Es el sistema que te enseña a crear, automatizar y escalar tu negocio digital sin depender de nadie.
                 </p>
                 <div className="flex items-center space-x-4 text-sm">
                   <div className="flex items-center space-x-1">
@@ -152,7 +152,7 @@ const HomePage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
             <div className="relative">
               <img 
-                src="https://images.pexels.com/photos/3777943/pexels-photo-3777943.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop" 
+                src="/frustrado.png" 
                 alt="Persona estresada frente a la computadora"
                 className="rounded-2xl shadow-2xl w-full h-[400px] object-cover"
               />
@@ -181,7 +181,7 @@ const HomePage = () => {
               </div>
               <div className="text-center p-6 glass-effect rounded-2xl border border-red-500/30">
                 <div className="text-4xl mb-4">😤</div>
-                <h3 className="font-bold text-white mb-2">Cursos que no sirven</h3>
+                <h3 className="font-bold text-white mb-2">Programas que no sirven</h3>
                 <p className="text-gray-400 text-sm">Puro humo, nada práctico</p>
               </div>
             </div>

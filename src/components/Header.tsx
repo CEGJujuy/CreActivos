@@ -11,9 +11,9 @@ const Header = () => {
         <div className="flex justify-between items-center py-4">
           <Link to="/" className="flex items-center space-x-3">
             <img 
-              src="/logo.jpeg" 
+              src="/logo-sin-fondo.png" 
               alt="CreActivo Digital Agency" 
-              className="h-12 w-auto rounded-lg"
+              className="h-12 w-auto"
             />
             <span className="text-2xl font-bold neon-text">CreActivo Studio</span>
           </Link>

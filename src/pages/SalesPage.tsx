@@ -21,7 +21,7 @@ const SalesPage = () => {
     {
       name: "Mayra L.",
       location: "Buenos Aires, 41 años",
-      text: "Lo que me dieron en este taller vale 5 veces más. Pero lo mejor fue recuperar la confianza. Aprendí a venderme, a hablar en cámara y a activar mi proyecto.",
+      text: "Lo que me dieron en este programa vale 5 veces más. Pero lo mejor fue recuperar la confianza. Aprendí a venderme, a hablar en cámara y a activar mi proyecto.",
       rating: 5,
       image: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop"
     }
@@ -43,7 +43,7 @@ const SalesPage = () => {
         "Prompts para imágenes con IA",
         "Estrategias para redes sociales"
       ],
-      classes: "15 clases grabadas",
+      classes: "15 masterclasses grabadas",
       icon: <Zap className="h-8 w-8" />,
       color: "from-blue-500 to-blue-600",
       buyLink: "https://hotmart.com/es/marketplace/productos/creactivo-studio-inicio"
@@ -54,13 +54,16 @@ const SalesPage = () => {
       originalPrice: 75,
       description: "Lleva tu negocio al siguiente nivel",
       features: [
-        "Todo lo de 'Tu Inicio Inteligente'",
         "Chatbot de WhatsApp automatizado",
         "Edición de video intermedia",
+        "Creación de página web con IA",
+        "Creación de App con IA",
+        "Tips de crecimiento en redes sociales",
+        "Creación de marca",
         "🎁 REGALO: Página web completa",
         "🎁 REGALO: Landing page optimizada"
       ],
-      classes: "30 clases grabadas",
+      classes: "30 masterclasses grabadas",
       icon: <Gift className="h-8 w-8" />,
       color: "from-green-500 to-green-600",
       popular: true,
@@ -72,16 +75,16 @@ const SalesPage = () => {
       originalPrice: 175,
       description: "La experiencia completa y profesional",
       features: [
-        "Todo lo anterior incluido",
         "Clon personal con IA",
         "Influencer virtual con IA",
         "Funnel/embudo de ventas completo",
         "Creación avanzada de videos",
         "Generación avanzada de imágenes",
         "Automatización completa",
-        "Estrategias de escalamiento"
+        "Estrategias de escalamiento",
+        "Mentoría personalizada"
       ],
-      classes: "45+ clases grabadas",
+      classes: "45+ masterclasses grabadas",
       icon: <Crown className="h-8 w-8" />,
       color: "from-purple-500 to-purple-600",
       premium: true,
@@ -115,7 +118,7 @@ const SalesPage = () => {
               <span className="text-3xl line-through text-red-400">USD $295</span>
               <span className="text-6xl font-bold text-yellow-400 neon-text">USD $130</span>
             </div>
-            <p className="text-lg font-semibold mb-4">TODO INCLUIDO - Las 3 ofertas juntas</p>
+            <p className="text-lg font-semibold mb-4">TODO INCLUIDO - Los 3 programas juntos</p>
             <p className="text-sm text-gray-400">
               ⏰ Precio de lanzamiento por tiempo limitado
             </p>
@@ -131,7 +134,7 @@ const SalesPage = () => {
               Elegí tu <span className="text-secondary-400">nivel de transformación</span>
             </h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Cada oferta está diseñada para llevarte desde donde estás hasta donde querés llegar.
+              Cada programa está diseñado para llevarte desde donde estás hasta donde querés llegar.
             </p>
           </div>
 
@@ -198,8 +201,8 @@ const SalesPage = () => {
               🎉 ¡SUPER OFERTA DE LANZAMIENTO!
             </h3>
             <p className="text-xl mb-6">
-              En lugar de pagar cada oferta por separado (USD $295 total), 
-              llevate las <strong>3 ofertas completas</strong> por solo:
+              En lugar de pagar cada programa por separado (USD $295 total), 
+              llevate los <strong>3 programas completos</strong> por solo:
             </p>
             <div className="text-6xl font-bold mb-4">USD $130</div>
             <p className="text-lg font-semibold mb-6">
@@ -212,7 +215,7 @@ const SalesPage = () => {
               className="bg-black text-white font-bold py-4 px-12 rounded-xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center space-x-2 text-lg"
             >
               <Zap className="h-6 w-6" />
-              <span>QUIERO TODAS LAS OFERTAS</span>
+              <span>QUIERO TODOS LOS PROGRAMAS</span>
             </a>
           </div>
         </div>
@@ -286,21 +289,21 @@ const SalesPage = () => {
           </h2>
           <p className="text-xl mb-8 max-w-3xl mx-auto text-gray-300">
             Esta oferta de lanzamiento es por tiempo limitado. Una vez que termine, 
-            cada oferta volverá a su precio original.
+            cada programa volverá a su precio original.
           </p>
           
           <div className="glass-effect rounded-3xl p-8 max-w-2xl mx-auto mb-8 border border-primary-500/30">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center mb-6">
               <div>
-                <p className="text-sm text-primary-400">Oferta 1</p>
+                <p className="text-sm text-primary-400">Programa 1</p>
                 <p className="text-lg line-through text-red-400">$45</p>
               </div>
               <div>
-                <p className="text-sm text-primary-400">Oferta 2</p>
+                <p className="text-sm text-primary-400">Programa 2</p>
                 <p className="text-lg line-through text-red-400">$75</p>
               </div>
               <div>
-                <p className="text-sm text-primary-400">Oferta 3</p>
+                <p className="text-sm text-primary-400">Programa 3</p>
                 <p className="text-lg line-through text-red-400">$175</p>
               </div>
             </div>

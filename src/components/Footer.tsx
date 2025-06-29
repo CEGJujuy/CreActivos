@@ -11,9 +11,9 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-3 mb-4">
               <img 
-                src="/logo.jpeg" 
+                src="/logo-sin-fondo.png" 
                 alt="CreActivo Digital Agency" 
-                className="h-10 w-auto rounded-lg"
+                className="h-10 w-auto"
               />
               <span className="text-2xl font-bold neon-text">CreActivo Studio</span>
             </div>
