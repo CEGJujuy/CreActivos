@@ -1,0 +1,21 @@
+import React from 'react'
+
+interface FeatureCardProps {
+  icon: React.ReactNode
+  title: string
+  description: string
+}
+
+const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description }) => {
+  return (
+    <div className="feature-card text-center">
+      <div className="bg-gradient-to-r from-primary-500 to-secondary-500 p-4 rounded-2xl inline-block mb-4 text-white">
+        {icon}
+      </div>
+      <h3 className="text-xl font-bold text-gray-900 mb-3">{title}</h3>
+      <p className="text-gray-600 leading-relaxed">{description}</p>
+    </div>
+  )
+}
+
+export default FeatureCard
