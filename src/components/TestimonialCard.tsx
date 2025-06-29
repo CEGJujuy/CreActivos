@@ -16,11 +16,11 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ name, location, text,
         <img 
           src={image} 
           alt={name}
-          className="w-16 h-16 rounded-full object-cover border-4 border-primary-100"
+          className="w-16 h-16 rounded-full object-cover border-4 border-primary-500/30"
         />
         <div>
-          <h3 className="font-bold text-gray-900">{name}</h3>
-          <p className="text-sm text-gray-600">{location}</p>
+          <h3 className="font-bold text-white">{name}</h3>
+          <p className="text-sm text-gray-400">{location}</p>
           <div className="flex items-center space-x-1 mt-1">
             {[...Array(rating)].map((_, i) => (
               <Star key={i} className="h-4 w-4 text-yellow-400 fill-current" />
@@ -28,7 +28,7 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ name, location, text,
           </div>
         </div>
       </div>
-      <p className="text-gray-700 italic leading-relaxed">
+      <p className="text-gray-300 italic leading-relaxed">
         "{text}"
       </p>
     </div>

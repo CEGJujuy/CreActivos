@@ -43,19 +43,19 @@ Enviado desde CreActivo Studio`
 
   if (isSubmitted) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-primary-50 to-secondary-50 flex items-center justify-center section-padding">
-        <div className="bg-white rounded-3xl p-12 shadow-2xl text-center max-w-2xl mx-auto">
-          <div className="bg-secondary-100 rounded-full p-6 w-24 h-24 mx-auto mb-6 flex items-center justify-center">
-            <CheckCircle className="h-12 w-12 text-secondary-600" />
+      <div className="min-h-screen tech-bg flex items-center justify-center section-padding">
+        <div className="glass-effect rounded-3xl p-12 shadow-2xl text-center max-w-2xl mx-auto border border-primary-500/30">
+          <div className="bg-secondary-500/20 rounded-full p-6 w-24 h-24 mx-auto mb-6 flex items-center justify-center border border-secondary-500/30">
+            <CheckCircle className="h-12 w-12 text-secondary-400" />
           </div>
-          <h1 className="text-3xl font-bold text-gray-900 mb-4">
-            ¡Perfecto, mi chiki!
+          <h1 className="text-3xl font-bold text-white mb-4 neon-text">
+            ¡Perfecto, CreActivo!
           </h1>
-          <p className="text-lg text-gray-600 mb-6">
+          <p className="text-lg text-gray-300 mb-6">
             Te redirigimos a WhatsApp para que puedas enviarnos tu consulta directamente. 
             Así podemos responderte más rápido y personalizado.
           </p>
-          <p className="text-sm text-gray-500 mb-8">
+          <p className="text-sm text-gray-400 mb-8">
             Si no se abrió WhatsApp automáticamente, podés contactarnos directamente al +54 9 11 1234-5678
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -81,15 +81,15 @@ Enviado desde CreActivo Studio`
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-primary-50 to-secondary-50">
+    <div className="min-h-screen tech-bg">
       {/* Hero Section */}
       <section className="section-padding">
         <div className="container-max">
           <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-              ¿Tenés dudas, mi chiki?
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 neon-text">
+              ¿Tenés dudas, CreActivo?
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               Perfecto, estamos acá para ayudarte. Contanos qué necesitás y te respondemos 
               al toque con toda la info que necesites.
             </p>
@@ -97,13 +97,13 @@ Enviado desde CreActivo Studio`
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Form */}
-            <div className="bg-white rounded-3xl p-8 shadow-2xl">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">
+            <div className="glass-effect rounded-3xl p-8 shadow-2xl border border-gray-700">
+              <h2 className="text-2xl font-bold text-white mb-6">
                 Dejanos tu consulta
               </h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
                     ¿Cómo te llamás?
                   </label>
                   <input
@@ -113,13 +113,13 @@ Enviado desde CreActivo Studio`
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 bg-dark-800/50 border border-gray-600 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all text-white placeholder-gray-400"
                     placeholder="Tu nombre completo"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
                     Email
                   </label>
                   <input
@@ -129,13 +129,13 @@ Enviado desde CreActivo Studio`
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 bg-dark-800/50 border border-gray-600 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all text-white placeholder-gray-400"
                     placeholder="tu@email.com"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="phone" className="block text-sm font-medium text-gray-300 mb-2">
                     Teléfono (opcional)
                   </label>
                   <input
@@ -144,13 +144,13 @@ Enviado desde CreActivo Studio`
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 bg-dark-800/50 border border-gray-600 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all text-white placeholder-gray-400"
                     placeholder="+54 9 11 1234-5678"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="interest" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="interest" className="block text-sm font-medium text-gray-300 mb-2">
                     ¿Qué te interesa más?
                   </label>
                   <select
@@ -158,7 +158,7 @@ Enviado desde CreActivo Studio`
                     name="interest"
                     value={formData.interest}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 bg-dark-800/50 border border-gray-600 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all text-white"
                   >
                     <option value="general">Consulta general</option>
                     <option value="ofertas">Información sobre las ofertas</option>
@@ -169,7 +169,7 @@ Enviado desde CreActivo Studio`
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
                     Contanos tu duda
                   </label>
                   <textarea
@@ -179,7 +179,7 @@ Enviado desde CreActivo Studio`
                     rows={5}
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all resize-none"
+                    className="w-full px-4 py-3 bg-dark-800/50 border border-gray-600 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all resize-none text-white placeholder-gray-400"
                     placeholder="Contanos qué necesitás saber, qué dudas tenés, o cómo podemos ayudarte..."
                   />
                 </div>
@@ -192,7 +192,7 @@ Enviado desde CreActivo Studio`
                   <span>Enviar por WhatsApp</span>
                 </button>
 
-                <p className="text-sm text-gray-500 text-center">
+                <p className="text-sm text-gray-400 text-center">
                   Al enviar, se abrirá WhatsApp con tu mensaje pre-cargado para que puedas enviarlo directamente.
                 </p>
               </form>
@@ -200,58 +200,58 @@ Enviado desde CreActivo Studio`
 
             {/* Contact Info */}
             <div className="space-y-8">
-              <div className="bg-white rounded-3xl p-8 shadow-2xl">
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">
+              <div className="glass-effect rounded-3xl p-8 shadow-2xl border border-gray-700">
+                <h3 className="text-2xl font-bold text-white mb-6">
                   Otras formas de contactarnos
                 </h3>
                 <div className="space-y-6">
                   <div className="flex items-center space-x-4">
-                    <div className="bg-primary-100 p-3 rounded-xl">
-                      <MessageCircle className="h-6 w-6 text-primary-600" />
+                    <div className="bg-primary-500/20 p-3 rounded-xl border border-primary-500/30">
+                      <MessageCircle className="h-6 w-6 text-primary-400" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900">WhatsApp</h4>
-                      <p className="text-gray-600">+54 9 11 1234-5678</p>
-                      <p className="text-sm text-gray-500">Respuesta inmediata</p>
+                      <h4 className="font-semibold text-white">WhatsApp</h4>
+                      <p className="text-gray-300">+54 9 11 1234-5678</p>
+                      <p className="text-sm text-gray-400">Respuesta inmediata</p>
                     </div>
                   </div>
 
                   <div className="flex items-center space-x-4">
-                    <div className="bg-secondary-100 p-3 rounded-xl">
-                      <Mail className="h-6 w-6 text-secondary-600" />
+                    <div className="bg-secondary-500/20 p-3 rounded-xl border border-secondary-500/30">
+                      <Mail className="h-6 w-6 text-secondary-400" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900">Email</h4>
-                      <p className="text-gray-600">info@creactivostudio.com</p>
-                      <p className="text-sm text-gray-500">Respuesta en 24hs</p>
+                      <h4 className="font-semibold text-white">Email</h4>
+                      <p className="text-gray-300">info@creactivostudio.com</p>
+                      <p className="text-sm text-gray-400">Respuesta en 24hs</p>
                     </div>
                   </div>
 
                   <div className="flex items-center space-x-4">
-                    <div className="bg-yellow-100 p-3 rounded-xl">
-                      <MapPin className="h-6 w-6 text-yellow-600" />
+                    <div className="bg-yellow-500/20 p-3 rounded-xl border border-yellow-500/30">
+                      <MapPin className="h-6 w-6 text-yellow-400" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900">Ubicación</h4>
-                      <p className="text-gray-600">Buenos Aires, Argentina</p>
-                      <p className="text-sm text-gray-500">Atención online</p>
+                      <h4 className="font-semibold text-white">Ubicación</h4>
+                      <p className="text-gray-300">Buenos Aires, Argentina</p>
+                      <p className="text-sm text-gray-400">Atención online</p>
                     </div>
                   </div>
 
                   <div className="flex items-center space-x-4">
-                    <div className="bg-purple-100 p-3 rounded-xl">
-                      <Clock className="h-6 w-6 text-purple-600" />
+                    <div className="bg-purple-500/20 p-3 rounded-xl border border-purple-500/30">
+                      <Clock className="h-6 w-6 text-purple-400" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900">Horarios</h4>
-                      <p className="text-gray-600">Lun a Vie: 9:00 - 18:00</p>
-                      <p className="text-sm text-gray-500">Zona horaria Argentina</p>
+                      <h4 className="font-semibold text-white">Horarios</h4>
+                      <p className="text-gray-300">Lun a Vie: 9:00 - 18:00</p>
+                      <p className="text-sm text-gray-400">Zona horaria Argentina</p>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-gradient-to-br from-primary-500 to-secondary-500 rounded-3xl p-8 text-white">
+              <div className="neon-gradient rounded-3xl p-8 text-white">
                 <h3 className="text-2xl font-bold mb-4">
                   ¿Preferís hablar directamente?
                 </h3>
@@ -263,39 +263,39 @@ Enviado desde CreActivo Studio`
                   href="https://calendly.com/creactivostudio" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="bg-white text-primary-700 font-bold py-3 px-6 rounded-xl hover:bg-gray-100 transition-all inline-flex items-center space-x-2"
+                  className="bg-white text-black font-bold py-3 px-6 rounded-xl hover:bg-gray-100 transition-all inline-flex items-center space-x-2"
                 >
                   <Phone className="h-5 w-5" />
                   <span>Agendar Llamada</span>
                 </a>
               </div>
 
-              <div className="bg-white rounded-3xl p-8 shadow-2xl">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
+              <div className="glass-effect rounded-3xl p-8 shadow-2xl border border-gray-700">
+                <h3 className="text-2xl font-bold text-white mb-4">
                   Preguntas frecuentes
                 </h3>
                 <div className="space-y-4">
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-2">
+                    <h4 className="font-semibold text-white mb-2">
                       ¿Cuánto tiempo tengo para completar los cursos?
                     </h4>
-                    <p className="text-gray-600 text-sm">
+                    <p className="text-gray-400 text-sm">
                       El acceso es de por vida. Podés ir a tu ritmo sin presión.
                     </p>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-2">
+                    <h4 className="font-semibold text-white mb-2">
                       ¿Necesito conocimientos previos?
                     </h4>
-                    <p className="text-gray-600 text-sm">
+                    <p className="text-gray-400 text-sm">
                       No, empezamos desde cero. Si no te lo explican simple, no sirve.
                     </p>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-2">
+                    <h4 className="font-semibold text-white mb-2">
                       ¿Hay garantía de devolución?
                     </h4>
-                    <p className="text-gray-600 text-sm">
+                    <p className="text-gray-400 text-sm">
                       Sí, tenés 7 días para probar el contenido. Si no te convence, te devolvemos el dinero.
                     </p>
                   </div>
