@@ -152,8 +152,8 @@ const HomePage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
             <div className="relative">
               <img 
-                src="https://images.pexels.com/photos/3777943/pexels-photo-3777943.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" 
-                alt="Persona estresada frente a la computadora"
+                src="https://images.pexels.com/photos/3194521/pexels-photo-3194521.jpeg?auto=compress&cs=tinysrgb&w=800&h=600&fit=crop" 
+                alt="Persona estresada y frustrada frente a la computadora"
                 className="rounded-2xl shadow-2xl w-full h-[400px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-2xl"></div>
