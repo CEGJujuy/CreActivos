@@ -4,28 +4,29 @@ import { Menu, X } from 'lucide-react'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [logoError, setLogoError] = useState(false)
+
+  const handleLogoError = () => {
+    setLogoError(true)
+  }
 
   return (
     <header className="bg-dark-900/95 backdrop-blur-sm shadow-lg sticky top-0 z-50 border-b border-gray-800">
       <div className="container-max">
         <div className="flex justify-between items-center py-4">
           <Link to="/" className="flex items-center space-x-3">
-            <img 
-              src="/logo-sin-fondo.png" 
-              alt="CreActivo Digital Agency" 
-              className="h-12 w-auto"
-              onError={(e) => {
-                // Fallback si la imagen no carga
-                e.currentTarget.style.display = 'none'
-                e.currentTarget.nextElementSibling.style.display = 'block'
-              }}
-            />
-            <div 
-              className="h-12 w-12 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-lg flex items-center justify-center text-white font-bold text-xl hidden"
-              style={{ display: 'none' }}
-            >
-              C
-            </div>
+            {!logoError ? (
+              <img 
+                src="/logo.png" 
+                alt="CreActivo Digital Agency" 
+                className="h-12 w-auto"
+                onError={handleLogoError}
+              />
+            ) : (
+              <div className="h-12 w-12 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-lg flex items-center justify-center text-white font-bold text-xl">
+                C
+              </div>
+            )}
             <span className="text-2xl font-bold neon-text">CreActivo Studio</span>
           </Link>
 
