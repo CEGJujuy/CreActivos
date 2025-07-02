@@ -14,7 +14,18 @@ const Footer = () => {
                 src="/logo-sin-fondo.png" 
                 alt="CreActivo Digital Agency" 
                 className="h-10 w-auto"
+                onError={(e) => {
+                  // Fallback si la imagen no carga
+                  e.currentTarget.style.display = 'none'
+                  e.currentTarget.nextElementSibling.style.display = 'block'
+                }}
               />
+              <div 
+                className="h-10 w-10 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-lg flex items-center justify-center text-white font-bold text-lg hidden"
+                style={{ display: 'none' }}
+              >
+                C
+              </div>
               <span className="text-2xl font-bold neon-text">CreActivo Studio</span>
             </div>
             <p className="text-gray-300 mb-4 max-w-md">

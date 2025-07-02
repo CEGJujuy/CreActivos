@@ -14,7 +14,18 @@ const Header = () => {
               src="/logo-sin-fondo.png" 
               alt="CreActivo Digital Agency" 
               className="h-12 w-auto"
+              onError={(e) => {
+                // Fallback si la imagen no carga
+                e.currentTarget.style.display = 'none'
+                e.currentTarget.nextElementSibling.style.display = 'block'
+              }}
             />
+            <div 
+              className="h-12 w-12 bg-gradient-to-r from-primary-500 to-secondary-500 rounded-lg flex items-center justify-center text-white font-bold text-xl hidden"
+              style={{ display: 'none' }}
+            >
+              C
+            </div>
             <span className="text-2xl font-bold neon-text">CreActivo Studio</span>
           </Link>
 
