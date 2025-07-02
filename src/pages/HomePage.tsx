@@ -152,8 +152,8 @@ const HomePage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
             <div className="relative">
               <img 
-                src="/frustrado.png" 
-                alt="Persona estresada frente a la computadora"
+                src="/businessman-stressed.jpg" 
+                alt="Empresario estresado frente a la computadora"
                 className="rounded-2xl shadow-2xl w-full h-[400px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-2xl"></div>
