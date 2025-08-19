@@ -120,14 +120,14 @@ const HomePage = () => {
             </div>
 
             <div className="relative animate-float">
-              <div className="video-container glass-effect">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary-600/20 to-secondary-600/20 rounded-2xl flex items-center justify-center">
-                  <div className="text-center">
-                    <Play className="h-20 w-20 text-white mx-auto mb-4 animate-pulse" />
-                    <p className="text-white font-semibold">Video de Presentación</p>
-                    <p className="text-gray-300 text-sm">Descubre cómo transformar tu idea en negocio</p>
-                  </div>
-                </div>
+              <div className="video-container">
+                <iframe
+                  src="https://www.canva.com/design/DAGwdyEMF9A/mzsA8upoosZb9tPEag0EnA/watch?embed"
+                  allowFullScreen
+                  allow="fullscreen"
+                  className="rounded-2xl"
+                  title="CreActivo Studio - Video de Presentación"
+                />
               </div>
               <div className="absolute -top-4 -right-4 bg-yellow-400 text-black px-4 py-2 rounded-full font-bold text-sm animate-bounce">
                 ¡NUEVO!
