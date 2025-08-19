@@ -26,7 +26,7 @@ ${formData.message}
 
 Enviado desde CreActivo Studio`
 
-    const whatsappUrl = `https://wa.me/543883153549?text=${encodeURIComponent(whatsappMessage)}`
+    const whatsappUrl = `https://wa.me/5493883153549?text=${encodeURIComponent(whatsappMessage)}`
     
     // Abrir WhatsApp
     window.open(whatsappUrl, '_blank')
@@ -56,11 +56,11 @@ Enviado desde CreActivo Studio`
             Así podemos responderte más rápido y personalizado.
           </p>
           <p className="text-sm text-gray-400 mb-8">
-            Si no se abrió WhatsApp automáticamente, podés contactarnos directamente al +54 9 11 1234-5678
+            Si no se abrió WhatsApp automáticamente, podés contactarnos directamente al +54 388 315-3549
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="https://wa.me/543883153549" 
+              href="https://wa.me/5493883153549" 
               target="_blank" 
               rel="noopener noreferrer"
               className="btn-primary inline-flex items-center justify-center space-x-2"
@@ -91,7 +91,7 @@ Enviado desde CreActivo Studio`
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               Perfecto, estamos acá para ayudarte. Contanos qué necesitás y te respondemos 
-              Si no se abrió WhatsApp automáticamente, podés contactarnos directamente al +54 388 315-3549
+              en menos de 24 horas.
             </p>
           </div>
 
@@ -233,7 +233,7 @@ Enviado desde CreActivo Studio`
                     </div>
                     <div>
                       <h4 className="font-semibold text-white">Ubicación</h4>
-                      <p className="text-gray-300">Buenos Aires, Argentina</p>
+                      <p className="text-gray-300">Jujuy, Argentina</p>
                       <p className="text-sm text-gray-400">Atención online</p>
                     </div>
                   </div>
