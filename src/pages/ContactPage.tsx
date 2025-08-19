@@ -145,7 +145,7 @@ Enviado desde CreActivo Studio`
                     value={formData.phone}
                     onChange={handleChange}
                     className="w-full px-4 py-3 bg-dark-800/50 border border-gray-600 rounded-xl focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all text-white placeholder-gray-400"
-                    placeholder="+54 9 11 1234-5678"
+                    placeholder="+54 388 315-3549"
                   />
                 </div>
 
