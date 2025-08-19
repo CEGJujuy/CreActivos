@@ -15,7 +15,7 @@ const ContactPage = () => {
     e.preventDefault()
     
     // Crear el mensaje para WhatsApp
-    const whatsappMessage = `Hola! Soy ${formData.name}
+    const whatsappMessage = `¡Hola CreActivo Studio! Soy ${formData.name}
     
 📧 Email: ${formData.email}
 📱 Teléfono: ${formData.phone}
@@ -26,7 +26,7 @@ ${formData.message}
 
 Enviado desde CreActivo Studio`
 
-    const whatsappUrl = `https://wa.me/5491123456789?text=${encodeURIComponent(whatsappMessage)}`
+    const whatsappUrl = `https://wa.me/543883153549?text=${encodeURIComponent(whatsappMessage)}`
     
     // Abrir WhatsApp
     window.open(whatsappUrl, '_blank')
@@ -60,7 +60,7 @@ Enviado desde CreActivo Studio`
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a 
-              href="https://wa.me/5491123456789" 
+              href="https://wa.me/543883153549" 
               target="_blank" 
               rel="noopener noreferrer"
               className="btn-primary inline-flex items-center justify-center space-x-2"
@@ -91,7 +91,7 @@ Enviado desde CreActivo Studio`
             </h1>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               Perfecto, estamos acá para ayudarte. Contanos qué necesitás y te respondemos 
-              al toque con toda la info que necesites.
+              Si no se abrió WhatsApp automáticamente, podés contactarnos directamente al +54 388 315-3549
             </p>
           </div>
 
@@ -211,8 +211,8 @@ Enviado desde CreActivo Studio`
                     </div>
                     <div>
                       <h4 className="font-semibold text-white">WhatsApp</h4>
-                      <p className="text-gray-300">+54 9 11 1234-5678</p>
-                      <p className="text-sm text-gray-400">Respuesta inmediata</p>
+                      <p className="text-gray-300">+54 388 315-3549</p>
+                      <p className="text-sm text-gray-400">Atención 24 horas</p>
                     </div>
                   </div>
 
@@ -222,8 +222,8 @@ Enviado desde CreActivo Studio`
                     </div>
                     <div>
                       <h4 className="font-semibold text-white">Email</h4>
-                      <p className="text-gray-300">info@creactivostudio.com</p>
-                      <p className="text-sm text-gray-400">Respuesta en 24hs</p>
+                      <p className="text-gray-300">creactivostudio.geva@gmail.com</p>
+                      <p className="text-sm text-gray-400">Atención 24 horas</p>
                     </div>
                   </div>
 
@@ -244,8 +244,8 @@ Enviado desde CreActivo Studio`
                     </div>
                     <div>
                       <h4 className="font-semibold text-white">Horarios</h4>
-                      <p className="text-gray-300">Lun a Vie: 9:00 - 18:00</p>
-                      <p className="text-sm text-gray-400">Zona horaria Argentina</p>
+                      <p className="text-gray-300">Disponible 24 horas</p>
+                      <p className="text-sm text-gray-400">Todos los días del año</p>
                     </div>
                   </div>
                 </div>

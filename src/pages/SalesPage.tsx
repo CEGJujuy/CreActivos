@@ -254,7 +254,7 @@ const SalesPage = () => {
               ¿Te interesa algún servicio adicional? Contactanos para más información.
             </p>
             <a 
-              href="mailto:info@creactivostudio.com"
+              href="mailto:creactivostudio.geva@gmail.com"
               className="btn-primary inline-flex items-center space-x-2"
             >
               <span>Consultar Servicios</span>
